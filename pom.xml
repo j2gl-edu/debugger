@@ -17,7 +17,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>edu.advanced.Main</mainClass>
+                            <mainClass>edu.advanced.Instrucciones</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
