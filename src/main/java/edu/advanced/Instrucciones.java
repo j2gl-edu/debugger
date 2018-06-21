@@ -1,31 +1,41 @@
 package edu.advanced;
 
-public class Instrucciones{
+import java.util.Scanner;
 
-    public static void mostrarArreglo(int[] arreglo){
-      for (int i=0; i<=arreglo.length; i++){
-        System.out.println("Pos "i+": "+arreglo[i]);
+public class Instrucciones {
+
+    public static void mostrarArreglo(int[] arreglo) {
+      for (int i=0; i <= arreglo.length; i++){
+        System.out.println("Pos " + i + ": " + arreglo[i]);
       }
     }
   
     public static String obtenerDiaComoHoy(int anio){
+      String s = "";
       switch (anio){
-        case 1524: return "Conquista"; break;
-  
-        case 1821: return "Independencia de Guatemala"; break;
-        case 1944: return "Revolucion de Octubre"; break;
-        case 2012: return "Medalla de Plata en Olimpiadas"; break;
-  
+        case 1524: 
+          s = "Conquista"; 
+          break;  
+        case 1821: 
+          s = "Independencia de Guatemala"; 
+          break;
+        case 1944: 
+          s = "Revolucion de Octubre"; 
+          break;
+        case 2012: 
+          s = "Medalla de Plata en Olimpiadas"; 
+          break;  
       }
+      return s;
     }
   
-  
     public static void main(String[] args){
-        Scanner reader = new Scanner(System.io);
-        int val = reader.next();
+        Scanner reader = new Scanner(System.in);
+        int val = reader.nextInt();
         String dia = Instrucciones.obtenerDiaComoHoy(val);
         int[] numeros = {1,3,5,7,9};
         Instrucciones.mostrarArreglo(numeros);
     }
+
   }
   
